@@ -23,15 +23,6 @@ body .content_slider .items_list_slider {
   padding: 0;
   margin: 0;
 }
-body .content_slider .items_list_slider .item-active {
-  animation-name: item-active;
-  animation-duration: 1s;
-}
-body .content_slider .items_list_slider .item-inactive {
-  animation-name: item-inactive;
-  animation-duration: 0.5s;
-  animation-delay: 0.5s;
-}
 body .content_slider .items_list_slider .item_slider {
   align-items: center;
   box-sizing: border-box;
