@@ -1,0 +1,83 @@
+rojo=#FF6138;
+verde=#00A388;
+amarillo=#FFFF9D;
+crema=#fffad5;
+@keyframes item-active {
+    0%   {margin-left: 100%}  
+    50%  {margin-left: 50%}
+    100% {margin-left: 0px}
+}
+@keyframes item-inactive {
+    0%   {margin-left: 0%}  
+    50%  {margin-left: 50%}
+    100% {margin-left: 100%}
+}
+body	
+	background-color crema
+	font-family helvetica	
+	margin 0
+	padding 0			
+	.content_slider 
+		box-sizing border-box 
+		background-color rojo
+		overflow hidden
+		position relative
+		padding 10px 0
+		width 100%		
+		height 100vh	
+		.items_list_slider 					
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap: nowrap;													
+			padding 0
+			margin 0	
+			.item-active
+				animation-name: item-active
+				animation-duration: 1s						
+			.item-inactive
+				animation-name: item-inactive
+				animation-duration: 0.5s						
+				animation-delay: 0.5s
+			.item_slider																		
+				align-items center
+				box-sizing border-box 
+				background-color verde				
+				border 	10px solid white
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				justify-content center
+				list-style none		
+				height 96vh
+				width 100%
+				.tittle_item
+					color white
+					font-size 40px
+		.arrow 					
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			position absolute
+			height 100vh			
+			align-items center
+			span 
+				border-radius 100%
+				background-color amarillo
+				cursor pointer
+				font-size 12px
+				font-weight bold				
+				line-height 50px
+				height 50px
+				text-align center
+				width 50px
+		#arrow_left
+			left 0 
+		#arrow_right
+			right 0				
